@@ -1,0 +1,112 @@
+.your-issues-container {
+  padding: 2rem;
+  background-color: #fffbea;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.your-issues-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.your-issues-subtext {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+.email-input-box {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.email-input-box input {
+  padding: 10px 14px;
+  width: 400px;
+  border: 1.5px solid #ffa500;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.email-input-box button {
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.email-input-box button:hover {
+  background-color: #e65c00;
+}
+
+.complaints-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.issue-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.issue-card:hover {
+  transform: translateY(-4px);
+}
+
+.issue-thumbnail {
+  width: 150px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.issue-details {
+  flex: 1;
+}
+
+.issue-details h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e65c00;
+}
+
+.issue-details p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.status-badge {
+  display: inline-block;
+  background-color: #ff9900;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

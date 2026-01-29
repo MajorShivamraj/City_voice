@@ -1,0 +1,139 @@
+/* AdminDash.css */
+
+/* Top Section */
+.admin-title {
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Complaint Grid Container */
+.complaints-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  gap: 2rem;
+  padding: 1rem 2rem 3rem;
+  background-color: #fffaf3;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Complaint Card */
+.complaint-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(255, 119, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(255, 119, 0, 0.15);
+}
+
+/* Image */
+.complaint-image {
+  width: 40%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+
+/* Card Content */
+.complaint-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.complaint-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e85d04;
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+.complaint-description {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-bottom: 0.8rem;
+}
+
+/* Address Info */
+.complaint-address {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Status Badge */
+.complaint-status {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 9999px;
+  margin-bottom: 0.8rem;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.complaint-status.pending {
+  background-color: #e67e22;
+}
+
+.complaint-status.resolved {
+  background-color: #2ecc71;
+}
+
+.complaint-status.in-progress {
+  background-color: #f39c12;
+}
+
+/* Status Dropdown */
+.status-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: auto;
+}
+
+.status-controls label {
+  font-size: 0.9rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.status-controls select {
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fffdf7;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .complaint-image {
+    height: 200px;
+  }
+
+  .complaint-title {
+    font-size: 1.2rem;
+  }
+}
